@@ -2,6 +2,7 @@
 #include <unistd.h>
 /**
  * main - A c program that prints a line to standard error
+ * fput: Output standard error
  * Return 1 (Success)
  */
 int main(void)
