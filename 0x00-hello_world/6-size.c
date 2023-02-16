@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - A program that prints the size on various computer types
+ * printf: Function displaying a string function
  * Return 0(Sucess)
  */
 int main(void)
