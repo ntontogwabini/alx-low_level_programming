@@ -1,21 +1,28 @@
 #include <stdio.h>
+
 /**
- * main - A program that prints the size of various computer types
- * printf: Function displaying a string function
- * Return 0(Sucess)
+ * main- Entry point
+ * printf- The function prints the size of types
+ * Return: (0) Success
  */
+
 int main(void)
 {
-	char a;
-	int b;
-	long int c;
-	long long int d;
-	float f;
+	int c;
+	int i;
+	int li;
+	int lli;
+	int f;
 
-printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(a));
-printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(b));
-printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(c));
-printf("Size of a long long: %lu byte(s)\n", (unsigned long)sizeof(d));
-printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
-return (0);
+	c = sizeof(char);
+	i = sizeof(int);
+	li = sizeof(long int);
+	lli = sizeof(long long int);
+	f = sizeof(float);
+	printf("Size of a char: %d byte(s)\n", c);
+	printf("Size of an int: %d byte(s)\n", i);
+	printf("Size of a long int: %d byte(s)\n", li);
+	printf("Size of a long long int: %d byte(s)\n", lli);
+	printf("Size of a float: %d byte(s)\n", f);
+	return (0);
 }
