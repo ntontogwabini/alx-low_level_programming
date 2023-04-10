@@ -4,22 +4,20 @@
  * flip_bits - A func that counts the number of bits to change
  * to get from one number to another
  * @n: first number
- * @m: second number
- *
- * Return: number of bits to change
+ * @m: num 2
+ * Return: number of bit to flip
  */
+
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-int i, count = 0;
-unsigned long int current;
-unsigned long int exclusive = n ^ m;
+	unsigned long int difference = n ^ m;
+	unsigned int counter = 0;
 
-	for (i = 53; i >= 0; i--)
+	while (difference)
 	{
-		current = exclusive >> i;
-if (current & 1)
-count++;
-}
-return (count);
-}
+		counter += difference & 1;
+		difference >>= 1;
+	}
 
+	return (counter);
+}
